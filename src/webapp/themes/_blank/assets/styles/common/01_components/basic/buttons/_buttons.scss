@@ -1,0 +1,49 @@
+/* ==========================================================================
+   @file: _buttons.scss
+   @theme: _blank
+   @desc: Buttons rules root file
+   ========================================================================== */
+
+// abstract component
+%btn {
+  padding: 0;
+  border: none;
+  font-family: $font-default;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: (14/12);
+  text-transform: capitalize;
+  white-space: normal;
+  cursor: pointer;
+
+  // focus
+  &:focus {
+    outline: 0.1rem dotted $color-black;
+  }
+
+  // disabled
+  &[disabled],
+  &.#{$cssNamespace}is-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+}
+
+
+// reset style for all button
+button {
+  @extend %btn;
+  display: inline-flex;
+  justify-content: center;
+  background: none;
+  color: inherit;
+}
+
+
+// import
+@import "common/btn";
+@import "common/btn-icon";
+@import "common/btn-primary";
+@import "cards/btn-card";
+@import "filters/btn-filter";
+@import "labels/btn-label";

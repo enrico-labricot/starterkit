@@ -1,0 +1,11 @@
+/* ==========================================================================
+   @file: _btn.scss
+   @theme: _blank
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn {
+  @extend %btn;
+  padding: $base-step $base-step*2;
+  border: 0.1rem solid;
+}

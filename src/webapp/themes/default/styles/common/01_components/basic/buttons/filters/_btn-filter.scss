@@ -1,0 +1,15 @@
+/* ==========================================================================
+   @file: _btn-filter.scss
+   @theme: default
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-filter {
+  @extend %btn-base;
+  @extend %btn-color;
+
+  .#{$cssNamespace}icon {
+    fill: $color-white;
+    stroke: $color-white;
+  }
+}

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   @file: _paths.scss
+   @theme: default
+   @desc: Rules for font-face
+   ========================================================================== */
+
+// light version
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("#{$ubuntu-font-path}/ubuntu-light-webfont.woff?v=#{$ubuntu-version}") format("woff2"),
+    url("#{$ubuntu-font-path}/ubuntu-light-webfont.woff?v=#{$ubuntu-version}") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// regular version (default)
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("#{$ubuntu-font-path}/ubuntu-regular-webfont.woff?v=#{$ubuntu-version}") format("woff2"),
+    url("#{$ubuntu-font-path}/ubuntu-regular-webfont.woff?v=#{$ubuntu-version}") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// medium version
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("#{$ubuntu-font-path}/ubuntu-medium-webfont.woff?v=#{$ubuntu-version}") format("woff2"),
+    url("#{$ubuntu-font-path}/ubuntu-medium-webfont.woff?v=#{$ubuntu-version}") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// bold version
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("#{$ubuntu-font-path}/ubuntu-bold-webfont.woff?v=#{$ubuntu-version}") format("woff2"),
+    url("#{$ubuntu-font-path}/ubuntu-bold-webfont.woff?v=#{$ubuntu-version}") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}

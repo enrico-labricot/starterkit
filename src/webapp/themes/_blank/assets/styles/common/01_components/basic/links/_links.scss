@@ -1,0 +1,32 @@
+/* ==========================================================================
+   @file: _links.scss
+   @theme: _blank
+   @desc: Rules for links
+   ========================================================================== */
+
+// abstract components
+%link {
+  text-decoration: none;
+  color: $color-text-default;
+
+  // hover
+  &:hover {
+    cursor: pointer;
+  }
+
+  // focus
+  &:focus {
+    outline: 0.1rem dotted $color-black;
+  }
+}
+
+%link-hover {
+  @extend %link;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+@import "common/link";

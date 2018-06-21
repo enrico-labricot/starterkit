@@ -1,0 +1,10 @@
+/* ==========================================================================
+   @file: _btn-label.scss
+   @theme: default
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-label {
+  @extend %btn-color;
+  border-radius: 0.3rem;
+}

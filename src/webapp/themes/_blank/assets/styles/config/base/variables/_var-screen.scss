@@ -1,0 +1,21 @@
+// Screen dimensions / Breakpoints (@todo: check which unit - px, em, rem - is best for browsers)
+// Assume a mobile-first conception
+$screen-min: 32rem;
+$screen-max: 192rem; // @todo: check if necessary ?
+
+// breakpoints from google design guidelines (based on root font-size = 16px !!!)
+$screen-xs: 0;
+$screen-xs-2: 30rem;    // 480px
+$screen-sm: 37.5rem;    // 600px
+$screen-sm-2: 52.5rem;  // 840px
+$screen-md: 60rem;      // 960px
+$screen-lg: 80rem;      // 1280px
+$screen-lg-2: 90rem;    // 1440px
+$screen-lg-3: 100rem;   // 1600px
+$screen-xl: 120rem;     //1920px
+
+// Screen dimensions / Breakpoints
+$aside-nav-width: 9.5rem;
+$aside-subnav-width: 60rem;
+$header-height: 7.5rem;
+$aside-width: 32rem;

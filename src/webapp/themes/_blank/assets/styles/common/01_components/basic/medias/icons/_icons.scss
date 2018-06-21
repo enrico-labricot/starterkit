@@ -1,0 +1,16 @@
+/* ==========================================================================
+   @file: _icons.scss
+   @theme: _blank
+   @desc: Icons rules root file
+   ========================================================================== */
+
+// uniform icons
+.#{$cssNamespace}icon {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  // status
+  &.#{$cssNamespace}is-danger {
+    fill: $color-error;
+  }
+}

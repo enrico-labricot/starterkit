@@ -1,0 +1,40 @@
+/* ==========================================================================
+   @file: _layouts.scss
+   @theme: _blank
+   @desc: Layouts rules
+          A layout is a generic architecture for your templates
+   ========================================================================== */
+
+// Basic HTML rules
+html {
+  height: 100%;
+  font-size: $root-font-size;
+  box-sizing: border-box;
+}
+
+// apply box-sizing border-box
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: $base-font-size;
+  font-family: $font-default;
+  line-height: $line-height-base;
+  background-color: $color-bg-default;
+  color: $color-text-default;
+}
+
+// global container
+.#{$cssNamespace}view-container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 100%;
+}
+
+
+// common layouts
+@import "common/layout-default";

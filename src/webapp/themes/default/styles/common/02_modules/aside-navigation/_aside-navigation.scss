@@ -1,0 +1,76 @@
+/* ==========================================================================
+   @file: _aside-navigation.scss
+   @theme: default
+   @desc: Module navigation (main)
+   ========================================================================== */
+
+.#{$cssNamespace}aside-nav {
+  .#{$cssNamespace}nav-wrapper {
+    background-color: #000;
+    color: #967d4e;
+
+    > nav {
+      overflow: hidden;
+      background-color: $color-bg-invert;
+
+      > ul {
+        > li {
+          border-color: #967d4e;
+
+          &:first-child {
+            border-color: #967d4e;
+          }
+
+          > a {
+            border-left: 0.3rem solid transparent;
+            color: #967d4e;
+
+            .#{$cssNamespace}icon {
+              fill: #967d4e;
+            }
+
+            &:hover,
+            &.#{$cssNamespace}is-active {
+              border-left-color: #967d4e;
+              color: $color-white;
+
+              .#{$cssNamespace}icon {
+                fill: $color-white;
+              }
+            }
+          }
+        }
+
+        + ul > li {
+          border-color: #967d4e;
+        }
+      }
+    }
+
+    button {
+      color: #967d4e;
+      width: 100%;
+
+      > .#{$cssNamespace}icon {
+        fill: #967d4e;
+      }
+
+      &:hover {
+        border-left-color: #967d4e;
+        color: $color-white;
+
+        > .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    .#{$cssNamespace}wrapper-logo {
+      border-color: #967d4e;
+
+      .#{$cssNamespace}logo {
+        fill: #967d4e;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/* ==========================================================================
+   @file: _panel-card.scss
+   @theme: default
+   @desc: Panel card with styles
+   ========================================================================== */
+
+.#{$cssNamespace}panel-card {
+  &,
+  &[data-color] {
+    background-color: $color-white;
+  }
+
+  // disabled state
+  &.#{$cssNamespace}is-disabled {
+    border: 0.1rem solid $color-greyscale-9; // @todo: fix it
+    border-radius: 0.4rem;
+    background: repeating-linear-gradient(
+      135deg,
+      $color-greyscale-4,
+      $color-greyscale-4 0.1rem,
+      $color-greyscale-9 0.1rem,
+      $color-greyscale-9 0.6rem
+    );
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+// import
+@import "default/panel-card-default";
+@import "fill/panel-card-fill";
+@import "fill/panel-card-fill-secondary";
+@import "label/panel-card-label";
+@import "media/panel-card-media";
+@import "plain/panel-card-plain";

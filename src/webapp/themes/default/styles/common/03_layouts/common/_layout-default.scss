@@ -1,0 +1,12 @@
+/* ==========================================================================
+   @file: _layout-default.scss
+   @theme: default
+   @desc: Layouts styles
+   ========================================================================== */
+
+.#{$cssNamespace}layout-default {
+  > .#{$cssNamespace}aside {
+    background-color: $color-bg-invert;
+    color: $color-text-default-invert;
+  }
+}

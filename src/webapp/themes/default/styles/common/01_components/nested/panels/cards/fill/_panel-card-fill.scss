@@ -1,0 +1,443 @@
+/* ==========================================================================
+   @file: _panel-card-fill.scss
+   @theme: default
+   @desc: Panel card fill with styles
+   ========================================================================== */
+
+.#{$cssNamespace}panel-card-fill {
+  background-color: #aaa; // @todo: move default fill card to _blank theme
+  color: $color-white;
+
+  // header
+  > header {
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+  }
+
+  // content
+  > .#{$cssNamespace}panel-body {
+    border-top-color: $color-black;
+
+    // specific
+    .#{$cssNamespace}users {
+      border-left-color: $color-black;
+    }
+
+    + footer {
+      border-top: none;
+    }
+  }
+
+  // footer
+  > footer {
+    button {
+      text-transform: uppercase;
+      background-color: $color-black;
+      color: $color-white;
+
+      &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+        background-color: $color-white;
+        color: $color-black;
+      }
+    }
+  }
+
+  // description
+  .#{$cssNamespace}description {
+    opacity: 0.7;
+  }
+
+  // manage color rules
+  &[data-color="bleu"] {
+    background-color: $color-tertiary-1-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-1-c;
+      background-color: $color-tertiary-1-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-1-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-1-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-1-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-1-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-1-b;
+
+      button {
+        background-color: $color-tertiary-1-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-1-d;
+        }
+      }
+    }
+  }
+
+  &[data-color="orange"] {
+    background-color: $color-tertiary-2-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-2-c;
+      background-color: $color-tertiary-2-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-2-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-2-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-2-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-2-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-2-b;
+
+      button {
+        background-color: $color-tertiary-2-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-2-d;
+        }
+      }
+    }
+  }
+
+  &[data-color="rose"] {
+    background-color: $color-tertiary-3-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-3-c;
+      background-color: $color-tertiary-3-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-3-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-3-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-3-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-3-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-3-b;
+
+      button {
+        background-color: $color-tertiary-3-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-3-d;
+        }
+      }
+    }
+  }
+
+  &[data-color="vert-clair"] {
+    background-color: $color-tertiary-4-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-4-c;
+      background-color: $color-tertiary-4-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-4-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-4-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-4-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-4-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-4-b;
+
+      button {
+        background-color: $color-tertiary-4-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-4-d;
+        }
+      }
+    }
+  }
+
+  &[data-color="kaki"] {
+    background-color: $color-tertiary-5-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-5-c;
+      background-color: $color-tertiary-5-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-5-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-5-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-5-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-5-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-5-b;
+
+      button {
+        background-color: $color-tertiary-5-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-5-d;
+        }
+      }
+    }
+  }
+
+  &[data-color="violet"] {
+    background-color: $color-tertiary-6-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-6-c;
+      background-color: $color-tertiary-6-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-6-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-6-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-6-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-6-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-6-b;
+
+      button {
+        background-color: $color-tertiary-6-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-6-d;
+        }
+      }
+    }
+  }
+
+  &[data-color="jaune"] {
+    background-color: $color-tertiary-7-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-7-c;
+      background-color: $color-tertiary-7-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-7-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-7-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-7-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-7-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-7-b;
+
+      button {
+        background-color: $color-tertiary-7-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-7-d;
+        }
+      }
+    }
+  }
+
+  &[data-color="mauve"] {
+    background-color: $color-tertiary-8-a;
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-8-c;
+      background-color: $color-tertiary-8-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-8-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-8-a;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top-color: $color-tertiary-8-a;
+      }
+
+      // specific
+      .#{$cssNamespace}users {
+        border-left-color: $color-tertiary-8-c;
+        color: $color-white;
+
+        // icon color
+        .#{$cssNamespace}icon {
+          fill: $color-white;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-8-b;
+
+      button {
+        background-color: $color-tertiary-8-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-8-d;
+        }
+      }
+    }
+  }
+}

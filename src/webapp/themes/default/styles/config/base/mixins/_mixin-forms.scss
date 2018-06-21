@@ -1,0 +1,16 @@
+/* ==========================================================================
+   @file: _mixin-forms.scss
+   @theme: default
+   @desc: Mixin for manage forms
+   ========================================================================== */
+
+/* mixin for form placeholder */
+@mixin input-placeholder {
+  &::-webkit-input-placeholder { @content }
+
+  &:-moz-placeholder           { @content }
+
+  &::-moz-placeholder          { @content }
+
+  &:-ms-input-placeholder      { @content }
+}

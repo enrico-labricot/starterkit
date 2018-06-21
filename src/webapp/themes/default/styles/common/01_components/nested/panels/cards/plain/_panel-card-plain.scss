@@ -1,0 +1,131 @@
+/* ==========================================================================
+   @file: _panel-card-plain.scss
+   @theme: default
+   @desc: Panel card plain with styles
+   ========================================================================== */
+
+.#{$cssNamespace}panel-card-plain {
+  cursor: pointer;
+
+  > .#{$cssNamespace}panel-body {
+    p {
+      margin: $base-step 0;
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: $color-greyscale-1;
+    }
+
+    .#{$cssNamespace}icon {
+      overflow: visible;
+      min-width: 2rem;
+      min-height: 2rem;
+      padding: 0.2rem $base-step;
+      margin-right: $base-step;
+      border-radius: 50%;
+      background-color: $color-white;
+      fill: $color-greyscale-1;
+
+      + p {
+        margin-left: $base-step;
+      }
+    }
+  }
+
+  &[data-color="bleu"] {
+    background-color: mix($color-tertiary-1-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-1-a;
+    }
+  }
+
+  &[data-color="orange"] {
+    background-color: mix($color-tertiary-2-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-2-a;
+    }
+  }
+
+  &[data-color="rose"] {
+    background-color: mix($color-tertiary-3-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-3-a;
+    }
+  }
+
+  &[data-color="vert-clair"] {
+    background-color: mix($color-tertiary-4-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-4-a;
+    }
+  }
+
+  &[data-color="kaki"] {
+    background-color: mix($color-tertiary-5-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-5-a;
+    }
+  }
+
+  &[data-color="violet"] {
+    background-color: mix($color-tertiary-6-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-6-a;
+    }
+  }
+
+  &[data-color="jaune"] {
+    background-color: mix($color-tertiary-7-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-7-a;
+    }
+  }
+
+  &[data-color="mauve"] {
+    background-color: mix($color-tertiary-8-a, $color-greyscale-9, 50%);
+
+    &:hover {
+      background-color: $color-tertiary-8-a;
+    }
+  }
+
+  /* @todo: manage specific color ? */
+  &[data-color="gris"] {
+    background: repeating-linear-gradient(
+      135deg,
+      $color-greyscale-4,
+      $color-greyscale-4 0.1rem,
+      $color-greyscale-9 0.1rem,
+      $color-greyscale-9 0.6rem
+    );
+
+    > .#{$cssNamespace}panel-body {
+      display: flex;
+
+      p {
+        overflow: hidden;
+        margin: auto;
+        padding: $base-step;
+        border-radius: 0.3rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background-color: #58636d; // @todo: color palet ?
+        color: $color-white;
+      }
+    }
+  }
+
+  /* @todo: manage states to global card ? */
+  &.#{$cssNamespace}is-active {
+    border: 0.2rem solid $color-secondary-1;
+  }
+}

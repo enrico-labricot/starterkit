@@ -1,0 +1,20 @@
+/* ==========================================================================
+   @file: _common.scss
+   @theme: default
+   @desc: common styles (Note: import respecting strict order)
+   ========================================================================== */
+
+// [Optional] All styles from external (eg: Bootstrap, Foundation...)
+@import "00_vendor/vendor";
+
+// All styles for components
+@import "01_components/components";
+
+// All styles for modules
+@import "02_modules/modules";
+
+// All styles for layouts
+@import "03_layouts/layouts";
+
+// All styles for views
+@import "04_views/views";

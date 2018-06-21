@@ -1,0 +1,9 @@
+/* ==========================================================================
+   @file: _list-inline.scss
+   @theme: _blank
+   @desc: Lists rules root file
+   ========================================================================== */
+
+.#{$cssNamespace}list-inline {
+  @extend %list-inline;
+}

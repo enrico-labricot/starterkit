@@ -1,0 +1,13 @@
+/* ==========================================================================
+   @file: _btn-label.scss
+   @theme: _blank
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-label {
+  @extend %btn;
+  justify-content: center;
+  padding: $base-step*3 $base-step*4;
+  border: 0.2rem solid;
+  line-height: 1;
+}

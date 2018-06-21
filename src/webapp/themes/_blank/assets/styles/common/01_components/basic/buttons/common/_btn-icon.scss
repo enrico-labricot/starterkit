@@ -1,0 +1,26 @@
+/* ==========================================================================
+   @file: _btn-icon.scss
+   @theme: _blank
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-icon {
+  @extend %btn;
+  display: flex;
+  align-items: flex-end;
+
+  // text
+  span {
+    line-height: 1;
+
+    // next icon
+    + .#{$cssNamespace}icon {
+      margin-left: $base-step*2;
+    }
+  }
+
+  // icon + next text
+  .#{$cssNamespace}icon + span {
+    margin-left: $base-step*2;
+  }
+}

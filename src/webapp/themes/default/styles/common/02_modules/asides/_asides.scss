@@ -1,0 +1,14 @@
+/* ==========================================================================
+   @file: _asides.scss
+   @theme: default
+   @desc: Rules for asides module
+   ========================================================================== */
+
+// abstract styles for aside section
+%aside-style {
+  background-color: $color-secondary-1;
+  color: $color-white;
+}
+
+// import
+@import "aside/aside";

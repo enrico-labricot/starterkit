@@ -1,0 +1,54 @@
+/* ==========================================================================
+   @file: _layout-default.scss
+   @theme: _blank
+   @desc: Layouts rules
+          A layout is a generic architecture for your templates
+   ========================================================================== */
+
+// global) container
+.#{$cssNamespace}layout-default {
+  flex: 1;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-areas:  "asidenav header aside"
+    "asidenav main aside"
+    "asidenav footer aside";
+  overflow: auto;
+
+  > .#{$cssNamespace}aside-nav {
+    grid-area: asidenav;
+    z-index: 3;
+  }
+
+  > header {
+    grid-area: header;
+    height: $header-height;
+  }
+
+  > main {
+    grid-area: main;
+    overflow: auto;
+  }
+
+  // optionnal aside
+  > .#{$cssNamespace}aside {
+    z-index: 2;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    width: $aside-width;
+
+    > header {
+      height: $header-height;
+    }
+
+    > .#{$cssNamespace}body {
+      flex: 1;
+    }
+  }
+
+  .#{$cssNamespace}aside-flap {
+    z-index: 4;
+  }
+}

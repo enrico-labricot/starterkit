@@ -1,0 +1,551 @@
+/* ==========================================================================
+   @file: _panel-card-fill-secondary.scss
+   @theme: default
+   @desc: Panel card fill with styles
+   ========================================================================== */
+
+.#{$cssNamespace}panel-card-fill-secondary {
+  // header
+  > header button {
+    color: $color-white;
+  }
+
+  > .#{$cssNamespace}panel-body .#{$cssNamespace}form-field textarea {
+    border: none;
+  }
+
+  // manage color rules
+  &[data-color="bleu"] {
+    > header button {
+      border-color: $color-tertiary-1-a;
+
+      &:hover {
+        background-color: $color-tertiary-1-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-1-c;
+      background-color: $color-tertiary-1-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-1-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-1-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-1-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-1-b;
+
+      button {
+        background-color: $color-tertiary-1-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-1-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-1-a;
+
+      > header button {
+        background-color: $color-tertiary-1-a;
+      }
+    }
+  }
+
+  &[data-color="orange"] {
+    > header button {
+      border-color: $color-tertiary-2-a;
+
+      &:hover {
+        background-color: $color-tertiary-2-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-2-c;
+      background-color: $color-tertiary-2-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-2-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-2-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-2-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-2-b;
+
+      button {
+        background-color: $color-tertiary-2-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-2-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-2-a;
+
+      > header button {
+        background-color: $color-tertiary-2-a;
+      }
+    }
+  }
+
+  &[data-color="rose"] {
+    > header button {
+      border-color: $color-tertiary-3-a;
+
+      &:hover {
+        background-color: $color-tertiary-3-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-3-c;
+      background-color: $color-tertiary-3-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-3-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-3-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-3-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-3-b;
+
+      button {
+        background-color: $color-tertiary-3-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-3-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-3-a;
+
+      > header button {
+        background-color: $color-tertiary-3-a;
+      }
+    }
+  }
+
+  &[data-color="vert-clair"] {
+    > header button {
+      border-color: $color-tertiary-4-a;
+
+      &:hover {
+        background-color: $color-tertiary-4-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-4-c;
+      background-color: $color-tertiary-4-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-4-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-4-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-4-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-4-b;
+
+      button {
+        background-color: $color-tertiary-4-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-4-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-4-a;
+
+      > header button {
+        background-color: $color-tertiary-4-a;
+      }
+    }
+  }
+
+  &[data-color="kaki"] {
+    > header button {
+      border-color: $color-tertiary-5-a;
+
+      &:hover {
+        background-color: $color-tertiary-5-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-5-c;
+      background-color: $color-tertiary-5-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-5-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-5-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-5-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-5-b;
+
+      button {
+        background-color: $color-tertiary-5-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-5-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-5-a;
+
+      > header button {
+        background-color: $color-tertiary-5-a;
+      }
+    }
+  }
+
+  &[data-color="violet"] {
+    > header button {
+      border-color: $color-tertiary-6-a;
+
+      &:hover {
+        background-color: $color-tertiary-6-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-6-c;
+      background-color: $color-tertiary-6-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-6-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-6-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-6-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-6-b;
+
+      button {
+        background-color: $color-tertiary-6-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-6-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-6-a;
+
+      > header button {
+        background-color: $color-tertiary-6-a;
+      }
+    }
+  }
+
+  &[data-color="jaune"] {
+    > header button {
+      border-color: $color-tertiary-7-a;
+
+      &:hover {
+        background-color: $color-tertiary-7-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-7-c;
+      background-color: $color-tertiary-7-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-7-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-7-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-7-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-7-b;
+
+      button {
+        background-color: $color-tertiary-7-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-7-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-7-a;
+
+      > header button {
+        background-color: $color-tertiary-7-a;
+      }
+    }
+  }
+
+  &[data-color="mauve"] {
+    > header button {
+      border-color: $color-tertiary-8-a;
+
+      &:hover {
+        background-color: $color-tertiary-8-a;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-tertiary-8-c;
+      background-color: $color-tertiary-8-b;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-tertiary-8-d;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-tertiary-8-a;
+
+        ul + ul {
+          border-top-color: $color-tertiary-8-a;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-tertiary-8-b;
+
+      button {
+        background-color: $color-tertiary-8-d;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-tertiary-8-d;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-tertiary-8-a;
+
+      > header button {
+        background-color: $color-tertiary-8-a;
+      }
+    }
+  }
+
+  // absence
+  &[data-color="gris"] {
+    > header button {
+      border-color: $color-greyscale-3;
+
+      &:hover {
+        background-color: $color-greyscale-3;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: $color-greyscale-2;
+      background-color: $color-greyscale-3;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: $color-greyscale-2;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: $color-greyscale-3;
+
+        ul + ul {
+          border-top-color: $color-greyscale-3;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: $color-greyscale-3;
+
+      button {
+        background-color: $color-greyscale-3;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: $color-greyscale-3;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: $color-greyscale-3;
+
+      > header button {
+        border-color: shade($color-greyscale-3, 15%);
+        background-color: shade($color-greyscale-3, 15%);
+      }
+    }
+  }
+
+  // astreinte
+  &[data-color="rouge"] {
+    > header button {
+      border-color: #d61644;
+
+      &:hover {
+        background-color: #d61644;
+      }
+    }
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      border-top-color: darkred;
+      background-color: #d61644;
+
+      // svg icons
+      .#{$cssNamespace}icon {
+        fill: darkred;
+      }
+
+      // expand/collapse bloc
+      .#{$cssNamespace}bloc-toggle {
+        border-top-color: #d61644;
+
+        ul + ul {
+          border-top-color: #d61644;
+        }
+      }
+    }
+
+    // footer
+    > footer {
+      background-color: #d61644;
+
+      button {
+        background-color: #d61644;
+        color: $color-white;
+
+        &:not(.#{$cssNamespace}is-disabled):not([disabled]):hover {
+          color: #d61644;
+        }
+      }
+    }
+
+    // enabled mode
+    &.#{$cssNamespace}is-enabled {
+      background-color: #d61644;
+
+      > header button {
+        border-color: shade(#d61644, 20%);
+        background-color: shade(#d61644, 20%);
+      }
+    }
+  }
+}

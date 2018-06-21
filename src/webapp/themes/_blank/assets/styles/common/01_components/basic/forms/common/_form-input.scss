@@ -1,0 +1,21 @@
+/* ==========================================================================
+   @file: _form-input.scss
+   @theme: _blank
+   @desc: Basic input rules
+   ========================================================================== */
+
+// input => text, time, number....
+input {
+  @extend %form-control;
+  border-radius: 0.3rem;
+
+  // error state
+  .#{$cssNamespace}is-error & {
+    border-color: $color-error;
+  }
+
+  // success state
+  .#{$cssNamespace}is-success & {
+    border-color: $color-success;
+  }
+}

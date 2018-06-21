@@ -1,0 +1,10 @@
+/* ==========================================================================
+   @file: _btn-invert.scss
+   @theme: default
+   @desc: Buttons invert color
+   ========================================================================== */
+
+.#{$cssNamespace}btn-invert {
+  @extend %btn-base;
+  @extend %btn-color-invert;
+}

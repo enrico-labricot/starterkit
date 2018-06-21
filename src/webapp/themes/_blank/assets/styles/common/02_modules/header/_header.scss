@@ -1,0 +1,48 @@
+/* ==========================================================================
+   @file: _header.scss
+   @theme: _blank
+   @desc: Module header
+   ========================================================================== */
+
+.#{$cssNamespace}header-main {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+
+  .#{$cssNamespace}wrapper-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .#{$cssNamespace}wrapper-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: $base-step*2 $base-step*4;
+      text-decoration: none;
+
+      .#{$cssNamespace}logo {
+        width: 3.5rem;
+        height: 3.2rem;
+      }
+
+      span {
+        display: block;
+        margin-top: $base-step * 2;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .#{$cssNamespace}wrapper-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    > ul {
+      margin: 0 2rem;
+    }
+  }
+}

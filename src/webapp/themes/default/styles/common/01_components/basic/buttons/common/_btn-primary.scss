@@ -1,0 +1,14 @@
+/* ==========================================================================
+   @file: _btn-primary.scss
+   @theme: default
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-primary {
+
+  // active mode
+  &.#{$cssNamespace}is-active {
+    background-color: tint($color-secondary-1, 50%);
+    color: $color-white;
+  }
+}

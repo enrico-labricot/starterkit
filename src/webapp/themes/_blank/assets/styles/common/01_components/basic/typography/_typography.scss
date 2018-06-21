@@ -1,0 +1,14 @@
+/* ==========================================================================
+   @file: _typography.scss
+   @theme: _blank
+   @desc: Typography rules root file
+   ========================================================================== */
+
+// reset paragraph styles
+p {
+  margin: 0;
+
+  + p {
+    margin-top: $base-step*3;
+  }
+}

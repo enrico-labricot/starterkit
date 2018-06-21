@@ -1,0 +1,9 @@
+/* ==========================================================================
+   @file: _aside.scss
+   @theme: default
+   @desc: root file for aside styles
+   ========================================================================== */
+
+.#{$cssNamespace}aside {
+  @extend %aside-style;
+}

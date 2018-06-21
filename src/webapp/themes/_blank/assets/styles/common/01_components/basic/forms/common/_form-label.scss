@@ -1,0 +1,18 @@
+/* ==========================================================================
+   @file: _form-label.scss
+   @theme: _blank
+   @desc: Basic label rules
+   ========================================================================== */
+
+
+// basic label
+label,
+.#{$cssNamespace}label {
+  font-size: 1.1rem;
+
+  // hidden state
+  &[hidden] {
+    display: block; // todo: check if !important is necessary
+    @include visuallyhidden;
+  }
+}

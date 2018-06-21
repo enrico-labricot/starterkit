@@ -1,0 +1,73 @@
+// primary colors
+// $color-primary : #000000;
+
+// secondary colors
+$color-secondary-1: #222d3a;
+$color-secondary-1-light: #2c3844;
+
+// tertiary colors
+$color-tertiary-1-a: #3eb9d3; // main
+$color-tertiary-1-b: #3aacc8; // secondary
+$color-tertiary-1-c: #2795b7; // borders
+$color-tertiary-1-d: #136d97; // icons + footer btn
+
+$color-tertiary-2-a: #f78461;
+$color-tertiary-2-b: #f37557;
+$color-tertiary-2-c: #ef5940;
+$color-tertiary-2-d: #e73a28;
+
+$color-tertiary-3-a: #cd5599;
+$color-tertiary-3-b: #c24a8a;
+$color-tertiary-3-c: #9e3f6b;
+$color-tertiary-3-d: #840f39;
+
+$color-tertiary-4-a: #babf10;
+$color-tertiary-4-b: #aab126;
+$color-tertiary-4-c: #8a961f;
+$color-tertiary-4-d: #6c7513;
+
+$color-tertiary-5-a: #9dae88;
+$color-tertiary-5-b: #8da077;
+$color-tertiary-5-c: #677d52;
+$color-tertiary-5-d: #455c31;
+
+$color-tertiary-6-a: #8293dc;
+$color-tertiary-6-b: #7286d1;
+$color-tertiary-6-c: #566ac2;
+$color-tertiary-6-d: #3f50a8;
+
+$color-tertiary-7-a: #edaa00;
+$color-tertiary-7-b: #e89a26;
+$color-tertiary-7-c: #e08020;
+$color-tertiary-7-d: #d15619;
+
+$color-tertiary-8-a: #b195a5;
+$color-tertiary-8-b: #a28798;
+$color-tertiary-8-c: #896a7d;
+$color-tertiary-8-d: #5f4152;
+
+// greyscale colors
+$color-greyscale-1: #434c58;
+$color-greyscale-2: #4e5761;
+$color-greyscale-3: #7a8189;
+$color-greyscale-4: #90969c;
+$color-greyscale-5: #9ca8b0;
+$color-greyscale-6: #a7abb0;
+$color-greyscale-7: #bdc0c4;
+$color-greyscale-8: #d3d5d8;
+$color-greyscale-9: #e8edef;
+
+// Base colors
+$color-white: #fff;
+$color-black: #000;
+$color-red: #d61644;
+
+// Init global colors
+$color-bg-default: $color-greyscale-9;
+$color-text-default: $color-black;
+$color-text-default-invert: $color-white;
+$color-error: #f44336;
+$color-success: #2dd400;
+$color-disabled-bg: lightgrey;
+$color-disabled-bd: lightgrey;
+$color-disabled-text: darkgrey;

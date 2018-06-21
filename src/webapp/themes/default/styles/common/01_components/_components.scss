@@ -1,0 +1,12 @@
+/* ==========================================================================
+   @file: _components.scss
+   @theme: default
+   @desc: Components rules
+          a component is a logical & reusable piece of semantic code
+   ========================================================================== */
+
+// 1. Plain components
+@import "basic/basic";
+
+// 2. Nested components
+@import "nested/nested";

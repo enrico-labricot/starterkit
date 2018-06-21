@@ -1,0 +1,52 @@
+/* ==========================================================================
+   @file: _form-checkbox.scss
+   @theme: _blank
+   @desc: Basic input rules
+   ========================================================================== */
+
+.#{$cssNamespace}checkbox {
+  display: flex;
+
+  input {
+    @include visuallyhidden;
+
+    &:not(:checked) + label:after {
+      opacity: 0;
+    }
+
+    &:checked + label:after {
+      opacity: 1;
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+
+  label {
+    flex: 1;
+    position: relative;
+    padding-top: 0.2rem;
+    padding-left: 2.8rem;
+    font-weight: 500;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.8rem;
+      height: 1.8rem;
+      border: 0.1rem solid $color-black;
+      border-radius: 0.3rem; // TODO move into theme
+    }
+
+    &:after {
+      content: "\2713";
+      padding: 0.2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,287 @@
+/* ==========================================================================
+   @file: _panels.scss
+   @theme: _blank
+   @desc: Structured block
+   ========================================================================== */
+
+// abstract components
+%panel {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    .#{$cssNamespace}panel-title {
+      padding: $base-step*4;
+    }
+
+    .#{$cssNamespace}wrapper {
+      display: flex;
+
+      .#{$cssNamespace}panel-title {
+        flex: 1;
+      }
+    }
+
+    + .#{$cssNamespace}panel-body {
+      border-top: 0.1rem solid;
+    }
+  }
+
+  // content
+  .#{$cssNamespace}panel-body {
+    flex: 1;
+    padding: $base-step*4;
+
+    + footer {
+      border-top: 0.1rem solid;
+    }
+  }
+
+  footer {
+    padding: $base-step*4;
+  }
+
+
+  // focus
+  &:focus {
+    outline: 0.1rem dotted $color-black;
+  }
+}
+
+%panel-card {
+  @extend %panel;
+  position: relative;
+  overflow: hidden; // prevent bgcolor over border-radius => @todo: conflict with tooltip ?
+  border-radius: 0.4rem;
+
+  > header {
+    padding: 0;
+
+    // title
+    .#{$cssNamespace}panel-title {
+      display: flex;
+      overflow: hidden;
+      height: 3.4rem;
+      padding: 0;
+      margin: $base-step*2 $base-step*2 $base-step*2 $base-step*4;
+      font-size: $base-font-size;
+      font-weight: 500;
+      line-height: (17/12);
+      text-transform: capitalize;
+
+      // @todo :: focus style + button or link ?
+      > button {
+        flex: 1;
+        display: block;
+        overflow: hidden;
+        height: 5rem;
+        margin: (-$base-step*2) (-$base-step*2) (-$base-step*2) (-$base-step*4);
+        padding: $base-step*2 $base-step*2 $base-step*2 $base-step*4;
+        font-size: $base-font-size;
+        font-weight: 500;
+        line-height: (17/12);
+        text-transform: capitalize;
+        text-align: left;
+      }
+    }
+
+    // with wrapper
+    > .#{$cssNamespace}wrapper {
+      display: flex;
+      align-items: flex-start;
+
+      > .#{$cssNamespace}panel-title {
+        flex: 1;
+      }
+
+      > button {
+        padding: $base-step*4 $base-step*3 $base-step*4 $base-step*5;
+      }
+    }
+
+    + .#{$cssNamespace}panel-body {
+      border-top: 0.1rem solid;
+    }
+  }
+
+  // content
+  > .#{$cssNamespace}panel-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    > .#{$cssNamespace}wrapper {
+      display: flex;
+    }
+
+    > .#{$cssNamespace}bloc-toggle {
+      padding: 0 $base-step*4;
+
+      .#{$cssNamespace}list-icons {
+        padding: $base-step*2 0;
+      }
+    }
+  }
+
+  // footer
+  > footer {
+    padding: 0;
+
+    .#{$cssNamespace}list-buttons {
+      @extend %list-block;
+      margin: 0;
+
+      > li {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        + li {
+          border-top: 0.1rem solid $color-black;
+        }
+
+        button {
+          border: none;
+          border-radius: 0;
+          padding: $base-step*2 $base-step*4;
+        }
+      }
+    }
+  }
+
+  // description
+  .#{$cssNamespace}description {
+    margin: 0 $base-step*4 $base-step*4;
+    font-weight: 300;
+  }
+
+  .#{$cssNamespace}list-icons {
+    flex: 1;
+    overflow: hidden;
+    padding: $base-step*2 $base-step*2 $base-step*2 $base-step*4;
+
+    > li > span {
+      display: inline-block;
+      max-height: 1.7rem;
+      overflow: hidden;
+
+      /* not work on firefox 52
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      */
+    }
+
+    .#{$cssNamespace}list {
+      padding: $base-step 0;
+
+      > li {
+        padding: 0;
+      }
+    }
+  }
+
+  .#{$cssNamespace}users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.1rem solid;
+    padding: $base-step*3;
+
+    sup {
+      position: relative;
+      top: -1rem;
+    }
+  }
+
+  // show/hide inside block :: @todo : animate ?
+  .#{$cssNamespace}bloc-toggle {
+    overflow: hidden;
+    max-height: 0;
+    // transition: max-height 0.3s ease-out; // @todo: performance tests
+  }
+
+
+  // enabled mode
+  &.#{$cssNamespace}is-enabled {
+
+    // content
+    > .#{$cssNamespace}panel-body {
+      .#{$cssNamespace}bloc-toggle {
+        border-top: 0.1rem solid;
+      }
+
+      .#{$cssNamespace}list-icons + .#{$cssNamespace}list-icons {
+        border-top: 0.1rem solid;
+      }
+    }
+
+    // title
+    .#{$cssNamespace}panel-title {
+      height: auto;
+      min-height: 3.4rem;
+
+      > button {
+        height: auto;
+        min-height: 5rem;
+      }
+    }
+
+    .#{$cssNamespace}bloc-toggle {
+      max-height: 40rem;
+      // overflow: auto; //TODO bug FF sur card corbeille
+      // transition: max-height 0.3s ease-in; // @todo: performance tests
+    }
+
+    .#{$cssNamespace}list-icons {
+      overflow: hidden;
+      max-height: none;
+      padding: $base-step*2 $base-step*4;
+    }
+
+    .#{$cssNamespace}users {
+      display: none;
+    }
+  }
+
+  // disabled mode
+  &.#{$cssNamespace}is-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+
+    > header {
+      cursor: not-allowed;
+    }
+  }
+
+
+  // Numbered mode
+  &.#{$cssNamespace}is-numbered {
+    .#{$cssNamespace}wrapper {
+      padding-left: $base-step*3;
+
+      > .#{$cssNamespace}panel-number {
+        align-self: center;
+        width: 2rem; // TODO => rework ?
+        border-radius: 50%;
+        background: $color-tertiary-1-a; // TODO => rework
+        color: white;
+
+        > span {
+          text-align: center;
+          line-height: 2rem; // TODO => rework
+          display: block;
+        }
+      }
+
+      > .#{$cssNamespace}panel-title {
+        margin-left: $base-step*2;
+      }
+    }
+  }
+}
+
+// import
+@import "cards/panel-card";
+@import "cards/panel-card-label";

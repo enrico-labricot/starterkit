@@ -1,0 +1,41 @@
+/* ==========================================================================
+   @file: _form-number.scss
+   @theme: _blank
+   @desc: Specific input type number rules
+   ========================================================================== */
+
+.#{$cssNamespace}form-number {
+  flex: 1; // TODO: cleanfix
+  display: flex;
+  align-items: center;
+
+  button {
+    padding: $base-step*2;
+  }
+
+  .#{$cssNamespace}input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    input {
+      flex: 1;
+      font-size: 1.3rem;
+      font-weight: normal;
+      text-align: center;
+
+      &[readonly] {
+        padding: 0 $base-step;
+        border: none;
+        background: none transparent;
+        color: inherit;
+      }
+
+      + span {
+        flex: 1;
+        font-size: 1.3rem;
+        font-weight: normal;
+      }
+    }
+  }
+}

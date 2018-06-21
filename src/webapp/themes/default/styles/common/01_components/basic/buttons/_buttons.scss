@@ -1,0 +1,201 @@
+/* ==========================================================================
+   @file: _buttons.scss
+   @theme: default
+   @desc: Buttons rules root file
+   ========================================================================== */
+
+// base theme rules buttons
+%btn-base {
+  min-width: 9.8rem; // @todo: check rule pertience
+  padding: $base-step $base-step*4;
+  border: 0.1rem solid;
+  border-radius: 1.2rem;
+  font-weight: 500; // ubuntu medium
+}
+
+// with color
+%btn-color {
+  &,
+  &[data-color] {
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        color: $color-white;
+      }
+    }
+  }
+
+  // apply color palett
+  &[data-color="bleu"] {
+    border-color: $color-tertiary-1-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-1-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-1-a;
+      }
+    }
+  }
+
+  &[data-color="orange"] {
+    border-color: $color-tertiary-2-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-2-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-2-a;
+      }
+    }
+  }
+
+  &[data-color="rose"] {
+    border-color: $color-tertiary-3-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-3-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-3-a;
+      }
+    }
+  }
+
+  &[data-color="vert-clair"] {
+    border-color: $color-tertiary-4-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-4-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-4-a;
+      }
+    }
+  }
+
+  &[data-color="kaki"] {
+    border-color: $color-tertiary-5-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-5-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-5-a;
+      }
+    }
+  }
+
+  &[data-color="violet"] {
+    border-color: $color-tertiary-6-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-6-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-6-a;
+      }
+    }
+  }
+
+  &[data-color="jaune"] {
+    border-color: $color-tertiary-7-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-7-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-7-a;
+      }
+    }
+  }
+
+  &[data-color="mauve"] {
+    border-color: $color-tertiary-8-a;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-tertiary-8-a;
+      }
+
+      &:focus {
+        outline-color: $color-tertiary-8-a;
+      }
+    }
+  }
+
+  &[data-color="gris"] {
+    border-color: $color-greyscale-3;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: $color-greyscale-3;
+      }
+
+      &:focus {
+        outline-color: $color-greyscale-3;
+      }
+    }
+  }
+
+  // @todo: manage astreinte color ?
+  &[data-color="rouge"] {
+    border-color: #d61644;
+
+    &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+      &:hover,
+      &.#{$cssNamespace}is-active {
+        background-color: #d61644;
+      }
+
+      &:focus {
+        outline-color: #d61644;
+      }
+    }
+  }
+}
+
+%btn-color-invert {
+  @extend %btn-color;
+  color: $color-white;
+
+  &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+    &:hover,
+    &.#{$cssNamespace}is-active {
+      background-color: $color-white;
+      color: $color-secondary-1;
+    }
+  }
+}
+
+// import
+@import "common/btn";
+@import "common/btn-icon";
+@import "common/btn-invert";
+@import "common/btn-primary";
+@import "cards/btn-card";
+@import "filters/btn-filter";
+@import "labels/btn-label";

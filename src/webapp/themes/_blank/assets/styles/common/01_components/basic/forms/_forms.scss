@@ -1,0 +1,32 @@
+/* ==========================================================================
+   @file: _forms.scss
+   @theme: _blank
+   @desc: Rules for forms
+   ========================================================================== */
+
+// abstract component
+%form-control {
+  display: block;
+  min-width: 0.1rem; // Fix for FF overflow bug with flex parent
+  width: 100%;
+  padding: $base-step*2;
+  border: 0.1rem solid $color-black;
+  font-family: $font-default;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: $color-white;
+  color: $color-text-default;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+@import "common/form-field";
+@import "common/form-label";
+@import "common/form-input";
+@import "common/form-select";
+@import "common/form-textarea";
+@import "common/form-checkbox";
+@import "common/form-number";

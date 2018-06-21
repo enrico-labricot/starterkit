@@ -1,0 +1,41 @@
+/* ==========================================================================
+   @file: _lists.scss
+   @theme: _blank
+   @desc: Lists rules root file
+   ========================================================================== */
+
+// abstract component
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%list-block {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  margin: (-$base-step) 0;
+
+  > li {
+    padding: $base-step 0;
+  }
+}
+
+%list-inline {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%list-group {
+  @extend %list;
+  display: flex;
+}
+
+
+// import
+@import "common/list";
+@import "common/list-group";
+@import "common/list-icons";
+@import "common/list-inline";

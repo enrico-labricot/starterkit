@@ -1,0 +1,10 @@
+/* ==========================================================================
+   @file: _btn-primary.scss
+   @theme: _blank
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-primary {
+  @extend %btn;
+  padding: $base-step $base-step*6;
+}

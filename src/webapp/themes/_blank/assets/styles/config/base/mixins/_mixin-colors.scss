@@ -1,0 +1,25 @@
+/* ==========================================================================
+   @file: _mixin-colors.scss
+   @theme: _blank
+   @desc: manage mixins for colors
+   ========================================================================== */
+
+/*----------------------------------------------------------------
+	Slightly lighten a color
+	@param {color} $color - color to tint
+	@param {number} $percentage - percentage of `$color` in returned color
+	@return {color}
+-----------------------------------------------------------------*/
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/*----------------------------------------------------------------
+	Slightly darken a color
+	@param {color} $color - color to shade
+	@param {number} $percentage - percentage of `$color` in returned color
+	@return {color}
+-----------------------------------------------------------------*/
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

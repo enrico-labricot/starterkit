@@ -1,0 +1,124 @@
+/* ==========================================================================
+   @file: _panel-card-label.scss
+   @theme: default
+   @desc: Panel card block with style
+   ========================================================================== */
+
+.#{$cssNamespace}panel-card-label {
+  &[data-color="bleu"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-1-a, 0.2);
+        color: $color-tertiary-1-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-1-a, 0.2);
+    }
+  }
+
+  &[data-color="orange"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-2-a, 0.2);
+        color: $color-tertiary-2-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-2-a, 0.2);
+    }
+  }
+
+  &[data-color="rose"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-3-a, 0.2);
+        color: $color-tertiary-3-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-3-a, 0.2);
+    }
+  }
+
+  &[data-color="vert-clair"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-4-a, 0.2);
+        color: $color-tertiary-4-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-4-a, 0.2);
+    }
+  }
+
+  &[data-color="kaki"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-5-a, 0.2);
+        color: $color-tertiary-5-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-5-a, 0.2);
+    }
+  }
+
+  &[data-color="violet"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-6-a, 0.2);
+        color: $color-tertiary-6-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-6-a, 0.2);
+    }
+  }
+
+  &[data-color="jaune"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-7-a, 0.2);
+        color: $color-tertiary-7-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-7-a, 0.2);
+    }
+  }
+
+  &[data-color="mauve"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-tertiary-8-a, 0.2);
+        color: $color-tertiary-8-a;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-tertiary-8-a, 0.2);
+    }
+  }
+
+  &[data-color="gris"] {
+    > header {
+      .#{$cssNamespace}panel-title {
+        background-color: rgba($color-greyscale-2, 0.2);
+        color: $color-greyscale-2;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      background-color: rgba($color-greyscale-2, 0.2);
+    }
+  }
+}

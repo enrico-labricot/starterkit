@@ -1,0 +1,10 @@
+/* ==========================================================================
+   @file: _header.scss
+   @theme: default
+   @desc: Module header
+   ========================================================================== */
+
+.#{$cssNamespace}header-main {
+  background-color: $color-white;
+  color: $color-text-default;
+}

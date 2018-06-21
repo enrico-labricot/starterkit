@@ -1,0 +1,35 @@
+/* ==========================================================================
+   @file: _panel-card-label.scss
+   @theme: _blank
+   @desc: Panel card block structure
+   ========================================================================== */
+
+// default component with styles
+.#{$cssNamespace}panel-card-label {
+  @extend %panel;
+  overflow: auto;
+
+  > header {
+    display: inline-flex;
+    text-align: center;
+
+    .#{$cssNamespace}panel-title {
+      padding: $base-step*2 $base-step*6;
+      border-radius: 0.4rem 0.4rem 0 0;
+      font-size: 1rem;
+      line-height: 1;
+      text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    + .#{$cssNamespace}panel-body {
+      border-top: none;
+    }
+  }
+
+  > .#{$cssNamespace}panel-body {
+    border-radius: 0 0.4rem 0.4rem;
+  }
+}

@@ -1,0 +1,125 @@
+/* ==========================================================================
+   @file: _panel-card.scss
+   @theme: _blank
+   @desc: Panel card block structure
+   ========================================================================== */
+
+// default component with styles
+.#{$cssNamespace}panel-card {
+  @extend %panel;
+
+  // ex: for grid day
+  &-default {
+    @extend %panel-card;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 0.3rem;
+      margin: $base-step;
+      border-radius: 0.4rem;
+    }
+
+    > .#{$cssNamespace}panel-body {
+      >.#{$cssNamespace}list-icons {
+        padding: $base-step*2 $base-step*2 $base-step*2 $base-step*4;
+      }
+    }
+  }
+
+  // for grid day
+  &-plain {
+    @extend %panel-card;
+
+    // TODO: Ameliorer la cesure des mots
+    // Quick fix pour empêcher un overflow sur firefox si le label est trop grand par rapport à la carte activité planifiée
+    > .#{$cssNamespace}panel-title {
+      word-break: break-all;
+    }
+
+    > .#{$cssNamespace}panel-body {
+      flex-direction: row;
+      border-top: none;
+      padding: $base-step;
+    }
+  }
+
+  // for aside
+  &-fill {
+    @extend %panel-card;
+  }
+
+  &-fill-secondary {
+    @extend %panel-card;
+
+    > header button {
+      width: 100%;
+      padding: $base-step*3 $base-step*4;
+      border: 0.2rem solid $color-black;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: $color-black;
+        color: $color-white;
+      }
+    }
+
+    > .#{$cssNamespace}panel-body {
+      border-top: none;
+    }
+
+    &.#{$cssNamespace}is-enabled {
+      > header button {
+        background-color: $color-black;
+        color: $color-white;
+      }
+
+      > .#{$cssNamespace}panel-body {
+        border-top: 0.1rem solid;
+        padding: $base-step*4;
+
+        .#{$cssNamespace}bloc-toggle {
+          margin: 0; // @todo: improve rule with panel-card-fill
+        }
+      }
+    }
+  }
+
+  // for icon + text
+  &-media {
+    @extend %panel-card;
+
+    > .#{$cssNamespace}panel-body {
+      flex-direction: row;
+
+      >.#{$cssNamespace}media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $base-step*2;
+        background-color: $color-grey;
+
+        .#{$cssNamespace}icon {
+          padding: $base-step*2;
+        }
+
+        + .#{$cssNamespace}content {
+          border-left: 0.1rem solid;
+        }
+      }
+
+      >.#{$cssNamespace}content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $base-step*2;
+        background-color: $color-white;
+      }
+    }
+  }
+}

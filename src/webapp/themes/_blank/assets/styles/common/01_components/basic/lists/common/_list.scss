@@ -1,0 +1,14 @@
+/* ==========================================================================
+   @file: _list.scss
+   @theme: _blank
+   @desc: Lists rules root file
+   ========================================================================== */
+
+// reset all list
+ul, ol {
+  @extend %list;
+}
+
+.#{$cssNamespace}list {
+  @extend %list-block;
+}

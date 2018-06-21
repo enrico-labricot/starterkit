@@ -1,0 +1,168 @@
+/* ==========================================================================
+   @file: _btn-card.scss
+   @theme: default
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-card {
+  &,
+  &[data-color] {
+    background-color: rgba($color-white, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-greyscale-6;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-greyscale-6;
+      color: $color-white;
+    }
+
+    // rollover mode
+    &:hover,
+    &:focus {
+      background-color: rgba($color-greyscale-6, 0.35);
+
+      .#{$cssNamespace}icon {
+        fill: $color-white;
+      }
+
+      .#{$cssNamespace}badge {
+        background-color: $color-white;
+        color: $color-greyscale-6;
+      }
+    }
+
+    // active mode
+    &.#{$cssNamespace}is-active {
+      color: $color-white;
+
+      .#{$cssNamespace}icon {
+        fill: $color-white;
+      }
+
+      .#{$cssNamespace}badge {
+        background-color: $color-white;
+        color: $color-greyscale-6;
+      }
+    }
+  }
+
+  // apply color palet
+  &[data-color="bleu"] {
+    background-color: rgba($color-tertiary-1-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="orange"] {
+    background-color: rgba($color-tertiary-2-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="rose"] {
+    background-color: rgba($color-tertiary-3-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="vert-clair"] {
+    background-color: rgba($color-tertiary-4-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="kaki"] {
+    background-color: rgba($color-tertiary-5-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="violet"] {
+    background-color: rgba($color-tertiary-6-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="jaune"] {
+    background-color: rgba($color-tertiary-7-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="mauve"] {
+    background-color: rgba($color-tertiary-8-a, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+
+  &[data-color="gris"] {
+    background-color: rgba($color-greyscale-2, 0.35);
+
+    .#{$cssNamespace}icon {
+      fill: $color-white;
+    }
+
+    .#{$cssNamespace}badge {
+      background-color: $color-white;
+      color: $color-greyscale-6;
+    }
+  }
+}

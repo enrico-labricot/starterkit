@@ -1,0 +1,38 @@
+/* ==========================================================================
+   @file: _btn-filter.scss
+   @theme: _blank
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-filter {
+  @extend %btn;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    flex: 1;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+    text-align: left;
+    text-overflow: ellipsis;
+  }
+
+  .#{$cssNamespace}icon {
+    visibility: hidden;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: $base-step*2;
+  }
+
+  &:not(.#{$cssNamespace}is-disabled):not([disabled]) {
+    &:hover,
+    &:focus {
+      .#{$cssNamespace}icon {
+        visibility: visible;
+      }
+    }
+  }
+}

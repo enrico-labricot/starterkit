@@ -1,0 +1,9 @@
+/* ==========================================================================
+   @file: _list-group.scss
+   @theme: _blank
+   @desc: Lists rules root file
+   ========================================================================== */
+
+.#{$cssNamespace}list-group {
+  @extend %list-group;
+}

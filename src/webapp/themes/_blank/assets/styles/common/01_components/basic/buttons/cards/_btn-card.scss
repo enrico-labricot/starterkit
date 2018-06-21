@@ -1,0 +1,42 @@
+/* ==========================================================================
+   @file: _btn-card.scss
+   @theme: _blank
+   @desc: Buttons rules
+   ========================================================================== */
+
+.#{$cssNamespace}btn-card {
+  &,
+  &[data-color] {
+    @extend %btn;
+    align-items: center;
+    position: relative;
+    border-radius: 0.4rem;
+    background-color: $color-white;
+
+    .#{$cssNamespace}icon {
+      margin: auto;
+    }
+
+    .#{$cssNamespace}badge {
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      width: 2rem;
+      height: 2rem;
+      margin-left: -1rem;
+      padding: 0.6rem $base-step;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      line-height: 1;
+      text-align: center;
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}

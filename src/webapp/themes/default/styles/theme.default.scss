@@ -1,0 +1,15 @@
+/* ==========================================================================
+   @file: main.scss
+   @theme: default
+   @theme_parent: _blank
+   @desc: root file for base theme (minimal) for App
+   @author: Eric FRANCOIS
+   ========================================================================== */
+
+// 1. Configuration
+@import "../../_blank/assets/styles/config/config";
+@import "config/config";
+
+// 2. Common styles
+@import "../../_blank/assets/styles/common/common";
+@import "common/common";

@@ -1,0 +1,15 @@
+/* ==========================================================================
+   @file: _paths.scss
+   @theme: default
+   @desc: Rules for font-face
+   ========================================================================== */
+
+// regular version (default)
+@font-face {
+  font-family: "Ubuntu Condensed";
+  src:
+    url("#{$ubuntu-condensed-font-path}/ubuntucondensed-regular-webfont.woff?v=#{$ubuntu-condensed-version}") format("woff2"),
+    url("#{$ubuntu-condensed-font-path}/ubuntucondensed-regular-webfont.woff?v=#{$ubuntu-condensed-version}") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

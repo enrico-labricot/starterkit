@@ -1,0 +1,30 @@
+/* ==========================================================================
+   @file: _form-input.scss
+   @theme: _blank
+   @desc: Basic form-field (eg: label + input)
+   ========================================================================== */
+
+
+.#{$cssNamespace}form-field {
+  display: flex;
+  flex-direction: column;
+
+  // input + button
+  .#{$cssNamespace}input-wrapper {
+    display: flex;
+
+    > input {
+      flex: 1;
+      border-width: 0.1rem 0 0.1rem 0.1rem;
+      border-radius: 0.3rem 0 0 0.3rem;
+
+      + button {
+        border: solid $color-black;
+        border-width: 0.1rem 0.1rem 0.1rem 0;
+        border-radius: 0 0.3rem 0.3rem 0;
+        padding: $base-step $base-step*2;
+        background-color: $color-white;
+      }
+    }
+  }
+}

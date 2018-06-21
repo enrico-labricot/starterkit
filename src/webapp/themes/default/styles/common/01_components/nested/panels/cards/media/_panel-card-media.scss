@@ -1,0 +1,53 @@
+/* ==========================================================================
+   @file: _panel-card-media.scss
+   @theme: default
+   @desc: Panel card with media styles
+   ========================================================================== */
+
+.#{$cssNamespace}panel-card-media {
+  > .#{$cssNamespace}panel-body {
+    > .#{$cssNamespace}media {
+      background-color: #f4f4f4; // TODO: color palet
+
+      .#{$cssNamespace}icon {
+        width: 3.4rem;
+        height: 3.4rem;
+        border-radius: 50%;
+        background-color: $color-greyscale-3;
+        fill: $color-white;
+      }
+
+      + .#{$cssNamespace}content {
+        border-left-color: #f4f4f4;
+      }
+    }
+
+    > .#{$cssNamespace}content {
+      font-weight: 500;
+      color: $color-greyscale-3;
+    }
+  }
+
+  // active state
+  &.#{$cssNamespace}is-active {
+    > .#{$cssNamespace}panel-body {
+      > .#{$cssNamespace}media {
+        background-color: $color-greyscale-3;
+
+        .#{$cssNamespace}icon {
+          background-color: #f4f4f4;
+          fill: $color-greyscale-3;
+        }
+
+        + .#{$cssNamespace}content {
+          border-left-color: $color-greyscale-5;
+        }
+      }
+
+      > .#{$cssNamespace}content {
+        background-color: $color-greyscale-3;
+        color: $color-white;
+      }
+    }
+  }
+}

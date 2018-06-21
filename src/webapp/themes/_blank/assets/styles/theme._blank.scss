@@ -1,0 +1,13 @@
+/* ==========================================================================
+   @file: main.scss
+   @theme: default
+   @theme_parent: -
+   @desc: root file for base theme (minimal) for App
+   @author: Eric FRANCOIS
+   ========================================================================== */
+
+// 1. Configuration
+@import "config/config";
+
+// 2. Common styles
+@import "common/common";

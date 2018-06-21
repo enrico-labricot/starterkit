@@ -1,0 +1,25 @@
+/* ==========================================================================
+   @file: _list.scss
+   @theme: _blank
+   @desc: Lists rules with icon
+   ========================================================================== */
+
+.#{$cssNamespace}list-icons {
+  @extend %list-block;
+
+  > li {
+    display: flex;
+    line-height: 1.6;
+    white-space: nowrap;
+
+    > .#{$cssNamespace}icon {
+      vertical-align: top;
+      flex-shrink: 0;
+      margin-right: $base-step*2;
+
+      + * {
+        flex: 1;
+      }
+    }
+  }
+}
