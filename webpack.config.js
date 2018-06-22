@@ -49,7 +49,7 @@ module.exports = {
         extract: true,
         spriteFilename: 'assets/images/svg/sprite.svg'
       },
-      include: path.resolve(__dirname, './src/webapp/themes/default/assets/images/svg/common')
+      include: path.resolve(__dirname, './src/webapp/themes/default/assets/images/svg')
     }, {
       test: /\.scss$/,
       use: ExtractTextPlugin.extract({

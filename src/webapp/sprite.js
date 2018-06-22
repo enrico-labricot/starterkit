@@ -1,7 +1,7 @@
-// import logoSqli from './themes/default/assets/images/svg/common/logos/logo-sqli.svg';
-// import logoSqliIcon from './themes/default/assets/images/svg/common/logos/logo-sqli-icon.svg';
+import logoSqli from './themes/default/assets/images/svg/logos/logo-sqli.svg';
+import logoSqliIcon from './themes/default/assets/images/svg/logos/logo-sqli-icon.svg';
 
-// export default {
-//   logoSqli: logoSqli,
-//   logoSqliIcon: logoSqliIcon
-// }
+export default {
+  logoSqli: logoSqli,
+  logoSqliIcon: logoSqliIcon
+}
